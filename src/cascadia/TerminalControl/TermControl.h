@@ -55,6 +55,7 @@ namespace winrt::Microsoft::Terminal::TerminalControl::implementation
 
         Windows::UI::Xaml::Automation::Peers::AutomationPeer OnCreateAutomationPeer();
         ::Microsoft::Console::Render::IRenderData* GetRenderData() const;
+        const FontInfo GetActualFont() const;
 
         static Windows::Foundation::Point GetProposedDimensions(Microsoft::Terminal::Settings::IControlSettings const& settings, const uint32_t dpi);
 
